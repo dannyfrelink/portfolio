@@ -1,0 +1,64 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body>* {
+    padding: 0 7.5vw;
+}
+
+header {
+    height: 100vh;
+    background-color: #09192c;
+    color: white;
+}
+
+header>:first-child {
+    padding-top: 3em;
+}
+
+header *~* {
+    margin-top: 1.5em;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #73A6E6;
+    text-shadow: 0px 3px 15px grey;
+    margin-top: 0.5em;
+}
+
+header p {
+    opacity: 0.6;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    text-align: center;
+    line-height: 13vw;
+    font-size: 1.3em;
+    border-radius: 0.6em;
+    width: 60vw;
+    height: 13vw;
+    margin: auto;
+    background-color: white;
+    color: #73A6E6;
+    box-shadow: 0px 3px 15px #73A6E6;;
+}
+
+header a:hover,
+header a:focus {
+    background-color: #73A6E6;
+    color: white;
+}
