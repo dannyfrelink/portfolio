@@ -12,13 +12,16 @@ body>* {
 }
 
 header {
-    height: 100vh;
+    height: fit-content;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
     background-color: #09192c;
     color: white;
 }
 
 header>:first-child {
-    padding-top: 3em;
+    padding-top: 4em;
 }
 
 header *~* {
@@ -28,7 +31,6 @@ header *~* {
 header h1 {
     font-size: 3em;
     color: #73A6E6;
-    text-shadow: 0px 3px 15px grey;
     margin-top: 0.5em;
 }
 
@@ -39,7 +41,7 @@ header p {
 header nav {
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 30vh;
     justify-content: space-between;
 }
 
@@ -61,4 +63,12 @@ header a:hover,
 header a:focus {
     background-color: #73A6E6;
     color: white;
+}
+
+header img {
+    height: 50%;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 50% 70%;
+    margin: 5em 0 0 -7.5vw;
 }
