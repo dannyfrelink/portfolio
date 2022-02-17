@@ -34,7 +34,8 @@ h2 {
     font-size: 2.6em;
 }
 
-header img {
+header img,
+section:last-of-type img {
     height: 85vw;
     width: 85vw;
     object-fit: cover;
@@ -49,7 +50,7 @@ main h2 {
     margin-bottom: 8vw;
 }
 
-section {
+section:not(:last-of-type) {
     margin-bottom: 13vw;
 }
 
@@ -66,7 +67,7 @@ section:last-of-type img {
     width: 85vw;
 }
 
-article {
+section:not(:last-of-type) article {
     background-color: #8D8DE0;
     padding: 0.8em 1em;
     transform: translateY(-0.3em);
@@ -92,4 +93,8 @@ article a {
 
 article a + a {
     margin-left: 1em;
+}
+
+section:last-of-type article {
+    margin: 5vw 0 6vw;
 }
