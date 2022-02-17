@@ -15,6 +15,7 @@ body {
     padding: 0 7.5vw;
 }
 
+/* Landing page */
 header {
     display: flex;
     flex-direction: column;
@@ -22,20 +23,73 @@ header {
     height: 100vh;
 }
 
-h2 {
+h1 {
     font-weight: normal;
+    font-size: 1.5em;
 }
 
-h1 {
+h2 {
     display: flex;
     flex-direction: column;
     font-size: 2.6em;
 }
 
-img {
+header img {
     height: 85vw;
     width: 85vw;
     object-fit: cover;
     object-position: 0% 100%;
     margin-top: 6vw;
+}
+
+/* Projects */
+main h2 {
+    width: fit-content;
+    border-bottom: 2.5px solid #8D8DE0;
+    margin-bottom: 8vw;
+}
+
+section {
+    margin-bottom: 13vw;
+}
+
+section img {
+    position: relative;
+    display: block;
+    width: 50vw;
+    margin: auto;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section:last-of-type img {
+    width: 85vw;
+}
+
+article {
+    background-color: #8D8DE0;
+    padding: 0.8em 1em;
+    transform: translateY(-0.3em);
+}
+
+article>* {
+    margin-top: 2vw;
+}
+
+article>*:not(h3) {
+    font-size: 0.9em;
+}
+
+article a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.6em;
+    padding: 0.2em 0.4em;
+    margin-top: 3vw;
+}
+
+article a + a {
+    margin-left: 1em;
 }
