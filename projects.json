@@ -1,0 +1,41 @@
+{
+    "lays": {
+        "title": "Lay's project",
+        "h1": "Recreating the Lay's website",
+        "when": "November 2020",
+        "images": {
+            "introImage": "images/projects/detailpage/lays/big-screen.png",
+            "ul1-1": "images/projects/detailpage/lays/breakdown-sketch1.jpeg",
+            "ul1-2": "images/projects/detailpage/lays/breakdown-sketch2.jpeg",
+            "ul2-1": "images/projects/detailpage/lays/white-section.png",
+            "ul2-2": "images/projects/detailpage/lays/yellow-section.png",
+            "ul2-3": "images/projects/detailpage/lays/open-menu.png",
+            "ul3-1": "images/projects/detailpage/lays/small-screen.png",
+            "ul3-2": "images/projects/detailpage/lays/middle-screen.png",
+            "ul3-3": "images/projects/detailpage/lays/big-screen.png",
+            "ul4-1": "images/projects/detailpage/lays/detailpage-original.png",
+            "ul4-2": "images/projects/detailpage/lays/detailpage-img.png",
+            "ul4-3": "images/projects/detailpage/lays/detailpage-text.png"
+        },
+        "altImages": {
+            "introImage": "Desktop version of project",
+            "ul1-1": "First breakdown sketch",
+            "ul1-2": "Second breakdown sketch",
+            "ul2-1": "First part Mobile design",
+            "ul2-2": "Second part Mobile design",
+            "ul2-3": "Third part Mobile design",
+            "ul3-1": "Mobile version",
+            "ul3-2": "Tablet version",
+            "ul3-3": "Desktop version",
+            "ul4-1": "Original detailpage",
+            "ul4-2": "Front of restyled detailpage",
+            "ul4-3": "Back of restyled detailpage"
+        },
+        "paragraph": {
+            "first": "This project started with some breakdown sketches to understand the layout of the Lay’s website some more. As I was working Mobile First, I decided just to make a breakdown sketch of the mobile version.",
+            "second": "After the sketches, I knew how to get started with my coding. As I said, I was working Mobile First, so that’s how the project started for me. Not to much time passed by until I got my mobile variant exactly how I wanted it to.",
+            "third": "The next step of this project was making the website responsive. This was the first time I was going to work with mediaqueries, so it took me some getting used to. Eventually I got the hang of it and got it working on all devices.",
+            "fourth": "As the last part of my recreation, I had to create a detail page of one of the flavors as well. I chose first to recreate the original detail page. After that, I spiced it up, by restyling the detail page with a flippable image."
+        }
+    }
+}
