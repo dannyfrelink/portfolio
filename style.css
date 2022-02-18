@@ -72,7 +72,7 @@ section img {
     width: 187.5px;
     margin: auto;
     z-index: 1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 section:nth-of-type(4) img {
@@ -131,6 +131,14 @@ section:last-of-type article {
     main section {
         display: flex;
         align-items: center;
+    }
+
+    main section img {
+        box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    main section:nth-of-type(2n) img {
+        box-shadow: -20px 20px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     main section:nth-of-type(2) {
