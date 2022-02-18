@@ -196,12 +196,6 @@ section:last-of-type article {
     }
 }
 
-/* @media (min-width: 1050px) {
-    header img {
-
-    }
-} */
-
 @media (min-width: 1500px) {
     body {
         display: flex;
