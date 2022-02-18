@@ -111,6 +111,7 @@ section:last-of-type article {
     margin: 5vmin 0 6vmin;
 }
 
+/* Changing to Desktop variant */
 @media (min-width: 750px) {
     header {
         flex-direction: row;
@@ -194,6 +195,7 @@ section:last-of-type article {
     }
 }
 
+/* Scaling up all sizes (clamp for font-sizes start now) */
 @media (min-width: 917px) {
     section:not(:last-of-type) article {
         padding: 1.74vw 2.62vw;
@@ -204,6 +206,7 @@ section:last-of-type article {
     }
 }
 
+/* Stop scaling width size and positioning center */
 @media (min-width: 1500px) {
     body {
         display: flex;
