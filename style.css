@@ -103,6 +103,13 @@ article a {
     margin-top: 3vmin;
 }
 
+article a:hover,
+article a:focus {
+    background-color: white;
+    outline: none;
+    color: #8D8DE0;
+}
+
 article a + a {
     margin-left: 1em;
 }
@@ -203,6 +210,10 @@ section:last-of-type article {
 
     main h2 {
         border-bottom: 0.27vw solid #8D8DE0;
+    }
+
+    article a {
+        border: 0.218vw solid white;
     }
 }
 
