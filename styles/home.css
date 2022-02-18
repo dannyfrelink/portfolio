@@ -94,7 +94,6 @@ section:last-of-type article {
 @media (min-width: 750px) {
     header {
         flex-direction: row;
-        width: 100%;
         margin: 0;
         align-items: center;
         justify-content: space-between;
@@ -186,14 +185,5 @@ section:last-of-type article {
 
     article a {
         border: 0.218vw solid white;
-    }
-}
-
-/* Stop scaling width size and positioning center */
-@media (min-width: 1500px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }

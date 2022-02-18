@@ -1,0 +1,29 @@
+body {
+    padding: 0;
+}
+
+body>* {
+    width: 85vw;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+main>img {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    overflow-x: scroll;
+}
+
+ul img {
+    height: 373px;
+}
+
+ul img~* {
+    margin-left: 3em;
+} 
