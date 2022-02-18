@@ -15,6 +15,10 @@ body {
     padding: 0 7.5vmin;
 }
 
+header, main {
+    max-width: 84em;
+}
+
 /* Landing page */
 header {
     display: flex;
@@ -24,24 +28,28 @@ header {
 }
 
 header section {
-    width: 318.75px;
+    width: clamp(318.75px, 34.76vw, 40.125em);
 }
 
 h1 {
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: clamp(1.5em, 2.62vw, 3.125em);
 }
 
 h2 {
     display: flex;
     flex-direction: column;
-    font-size: 2.6em;
+    font-size: clamp(2.6em, 4.54vw, 5.3em);
+}
+
+header p {
+    font-size: clamp(100%, 1.745vw, 2.25em);
 }
 
 header img,
 section:last-of-type img {
-    height: 318.75px;
-    width: 318.75px;
+    height: clamp(318.75px, 30.357vw, 34.56em);
+    width: clamp(318.75px, 30.357vw, 34.56em);
     object-fit: cover;
     object-position: 0% 100%;
     margin-top: 6vmin;
@@ -68,7 +76,7 @@ section img {
 }
 
 section:nth-of-type(4) img {
-    width: 318.75px;
+    width: clamp(318.75px, 42.5vw, 44.06em);
 }
 
 section:not(:last-of-type) article {
@@ -82,7 +90,7 @@ article>* {
 }
 
 article>*:not(h3) {
-    font-size: 0.9em;
+    font-size: clamp(0.9em, 1.57vw, 1.5em);
 }
 
 article a {
@@ -106,9 +114,18 @@ section:last-of-type article {
 @media (min-width: 750px) {
     header {
         flex-direction: row;
-        width: 85vw;
+        width: 100%;
+        margin: 0;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    header img {
+        margin: 0;
+    }
+
+    main h2 {
+        margin-bottom: 3.5vw;
     }
 
     main section {
@@ -126,17 +143,20 @@ section:last-of-type article {
     }
 
     main section:nth-of-type(4) img {
-        width: 42.5vw;
+        height: auto;
         margin-right: 0;
     }
 
     main section:nth-of-type(4) article {
-        transform: translateY(-1em);
+        transform: translateY(-3em);
         width: 70%;
     }
 
-    section img {
-        width: 25vw;
+    section img,
+    section:last-of-type img {
+        height: 41.8vw;
+        max-height: 50.125em;
+        width: auto;
     }
 
     section:not(:last-of-type) article {
@@ -145,7 +165,47 @@ section:last-of-type article {
         padding: 1em 1.5em;
     }
 
+    main section:last-of-type {
+        align-items: unset;
+        margin-bottom: 3.5em;
+    }
+
+    section:last-of-type img {
+        width: 40%;
+        margin: 0 5% 0 0 ;
+    }
+
+    section:last-of-type article {
+        width: 55%;
+        margin: 0;
+    }
+
     h3 {
+        font-size: clamp(100%, 2.04vw, 2.25em);
         margin-top: 0;
+    }
+}
+
+@media (min-width: 917px) {
+    section:not(:last-of-type) article {
+        padding: 1.74vw 2.62vw;
+    }
+
+    main h2 {
+        border-bottom: 0.27vw solid #8D8DE0;
+    }
+}
+
+/* @media (min-width: 1050px) {
+    header img {
+
+    }
+} */
+
+@media (min-width: 1500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
