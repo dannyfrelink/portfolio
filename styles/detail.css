@@ -2,28 +2,97 @@ body {
     padding: 0;
 }
 
-body>* {
-    width: 85vw;
-}
-
 h1 {
-    font-size: 45px;
+    font-size: clamp(2.813em, 8vw, 9.375em);
     text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 main>img {
     width: 100%;
 }
 
+section {
+    margin-top: 15vmin;
+}
+
+section article>*~* {
+    margin-top: 5vmin;
+}
+
+h2 {
+    font-size: clamp(1.5em, 2.62vw, 3.125em);
+    width: fit-content;
+    border-bottom: 2.5px solid #8D8DE0;
+    margin-bottom: 0.3em;
+}
+
+div p {
+    font-size: clamp(100%, 1.745vw, 2.25em);
+}
+
+p {
+    font-size: clamp(0.9em, 1.57vw, 1.5em);
+    max-width: 36em;
+}
+
 ul {
     display: flex;
     overflow-x: scroll;
+    margin-top: 7vmin;
 }
 
 ul img {
-    height: 373px;
+    height: clamp(23.313em, 40.676vw, 37em);
 }
 
 ul img~* {
     margin-left: 3em;
-} 
+}
+
+section:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    width: 100%;
+    font-size: clamp(100%, 1.745vw, 2.25em);
+    margin: 10vmin 0;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+a:first-child::before {
+    content: '\003C';
+    margin-right: 1.5vmin;
+    font-size: clamp(1.5em, 2.62vw, 3.125em);
+}
+
+a:last-child::after {
+    content: '\003E';
+    margin-left: 1.5vmin;
+    font-size: clamp(1.5em, 2.62vw, 3.125em);
+}
+
+a:hover,
+a:focus {
+    color: #8D8DE0;
+}
+
+@media (min-width: 750px) {
+    section article {
+        width: 100% ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    section article p {
+        margin-top: 0;
+    }
+}
