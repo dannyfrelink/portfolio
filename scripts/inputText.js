@@ -6,10 +6,12 @@ const p3 = document.querySelector('#p3');
 const p4 = document.querySelector('#p4');
 
 export default function inputTexts(filteredProjects) {
-    headerText.innerHTML = filteredProjects.h1;
-    pWhen.innerHTML = filteredProjects.when;
-    p1.innerHTML = filteredProjects.paragraph.first;
-    p2.innerHTML = filteredProjects.paragraph.second;
-    p3.innerHTML = filteredProjects.paragraph.third;
-    p4.innerHTML = filteredProjects.paragraph.fourth;
+    const filteredParagraph = filteredProjects.paragraph;
+
+    filteredProjects.h1 ? headerText.innerHTML = filteredProjects.h1 : headerText.innerHTML = 'Case Study';
+    filteredProjects.when ? pWhen.innerHTML = filteredProjects.when : pWhen.innerHTML = 'Unknown';
+    filteredParagraph.first ? p1.innerHTML = filteredParagraph.first : p1.remove();
+    filteredParagraph.second ? p2.innerHTML = filteredParagraph.second : p2.remove();
+    filteredParagraph.third ? p3.innerHTML = filteredParagraph.third : p3.remove();
+    filteredParagraph.fourth ? p4.innerHTML = filteredParagraph.fourth : p4.remove();
 }
