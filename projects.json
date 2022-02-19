@@ -43,9 +43,19 @@
         "title": "Avocado project",
         "h1": "Avocado climate impact",
         "when": "January 2022",
-        "images": {},
+        "images": {
+            "introImage": "images/projects/detailpage/avocado/landing-page.png",
+            "ul1_1": "images/projects/detailpage/avocado/brainstorm1.png",
+            "ul1_2": "images/projects/detailpage/avocado/brainstorm2.png",
+            "ul1_3": "images/projects/detailpage/avocado/brainstorm3.png",
+            "ul2_1": "images/projects/detailpage/avocado/landing-page.png",
+            "ul2_2": "images/projects/detailpage/avocado/hype-page.png"
+        },
         "altImages": {},
-        "paragraph": {},
+        "paragraph": {
+            "first": "Me and my teammates had to create a website that shows something regards climate change. Me and my teammates started of with a long brainstorm. Eventually we decided we wanted to target the climate impact of the avocado.",
+            "second": "Since I had to take control over the coding, I didn't do any of the Visuals. After the visuals were made, I could start animating the website. I used Greensock for my animations which was new for me. After some practice, I got the hang of it and was able to animate <a href='https://dannyfrelink.github.io/project-id/' target='_blank'>the website</a> how we liked to."
+        },
         "nextProject": "detail.html?avl"
     },
     "avl": {

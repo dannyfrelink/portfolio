@@ -61,19 +61,23 @@ section:last-of-type {
 }
 
 a {
+    color: white;
+}
+
+section>a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: white;
 }
 
-a:first-child::before {
+section>a:first-child::before {
     content: '\003C';
     margin-right: 1.5vmin;
     font-size: clamp(1.5em, 2.62vw, 3.125em);
 }
 
-a:last-child::after {
+section>a:last-child::after {
     content: '\003E';
     margin-left: 1.5vmin;
     font-size: clamp(1.5em, 2.62vw, 3.125em);
