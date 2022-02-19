@@ -38,5 +38,32 @@
             "fourth": "As the last part of my recreation, I had to create a detail page of one of the flavors as well. I chose first to recreate the original detail page. After that, I spiced it up, by restyling the detail page with a flippable image."
         },
         "nextProject": "detail.html?avocado"
+    },
+    "avocado": {
+        "title": "Avocado project",
+        "h1": "Avocado climate impact",
+        "when": "January 2022",
+        "images": {},
+        "altImages": {},
+        "paragraph": {},
+        "nextProject": "detail.html?avl"
+    },
+    "avl": {
+        "title": "AVL project",
+        "h1": "App remake into website",
+        "when": "June 2021",
+        "images": {},
+        "altImages": {},
+        "paragraph": {},
+        "nextProject": "detail.html?currencies"
+    },
+    "currencies": {
+        "title": "Currencies project",
+        "h1": "Compare currencies to €1",
+        "when": "November 2021",
+        "images": {},
+        "altImages": {},
+        "paragraph": {},
+        "nextProject": "detail.html?lays"
     }
 }
