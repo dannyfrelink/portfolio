@@ -5,7 +5,7 @@ body {
 h1 {
     font-size: clamp(2.813em, 8vw, 9.375em);
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -82,6 +82,12 @@ a:last-child::after {
 a:hover,
 a:focus {
     color: #8D8DE0;
+}
+
+@media (min-width: 500px) { 
+    h1 {
+        width: 80%;
+    }
 }
 
 @media (min-width: 750px) {
