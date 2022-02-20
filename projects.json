@@ -34,7 +34,7 @@
         "paragraph": {
             "first": "This project started with some breakdown sketches to understand the layout of the Lay’s website some more. As I was working Mobile First, I decided just to make a breakdown sketch of the mobile version.",
             "second": "After the sketches, I knew how to get started with my coding. As I said, I was working Mobile First, so that’s how the project started for me. Not to much time passed by until I got my mobile variant exactly how I wanted it to.",
-            "third": "The next step of this project was making the website responsive. This was the first time I was going to work with mediaqueries, so it took me some getting used to. Eventually I got the hang of it and got it working on all devices.",
+            "third": "The next step of this project was making <a href='https://dannyfrelink.github.io/blokweb/' target='_blank'>the website</a> responsive. This was the first time I was going to work with mediaqueries, so it took me some getting used to. Eventually I got the hang of it and got it working on all devices.",
             "fourth": "As the last part of my recreation, I had to create a detail page of one of the flavors as well. I chose first to recreate the original detail page. After that, I spiced it up, by restyling the detail page with a flippable image."
         },
         "nextProject": "detail.html?avocado"
@@ -75,7 +75,12 @@
             "ul2_2": "images/projects/detailpage/avl/focus.png",
             "ul2_3": "images/projects/detailpage/avl/desktop.png"
         },
-        "altImages": {},
+        "altImages": {
+            "introImage": "Desktop version of project",
+            "ul2_1": "Mobile version of project",
+            "ul2_2": "Focus/hover state in project",
+            "ul2_3": "Desktop version of project"
+        },
         "paragraph": {
             "first": "In April, I started my 10 weeks of internship at Van Ons. Here I got control over my own project. I had to create a desktop variant of an application that already exists: <a href='https://apps.apple.com/nl/app/avl-onco-app/id1442558622' target='_blank'>AVL Onco App</a>. An app that helps doctors give medication for tumors.",
             "second": "This was the first time working with PHP, which took some getting used to. There was a lot of data fetching from WordPress and also some Back-end involved. I started off Mobile First to recreate the whole app as it was right now. Then I continued with creating a responsiveness. At last I added accessibility to finish the website off. Sadly, there is no live version, since it's only given to AVL."
@@ -86,9 +91,19 @@
         "title": "Currencies project",
         "h1": "Compare currencies to €1",
         "when": "November 2021",
-        "images": {},
+        "images": {
+            "introImage": "images/projects/detailpage/currencies/hover-world.png",
+            "ul2_1": "images/projects/detailpage/currencies/world.png",
+            "ul2_2": "images/projects/detailpage/currencies/hover-world.png",
+            "ul3_1": "images/projects/detailpage/currencies/barchart.png",
+            "ul3_2": "images/projects/detailpage/currencies/hover-barchart.png"
+        },
         "altImages": {},
-        "paragraph": {},
+        "paragraph": {
+            "first": "Most of the work of this React project isn't really visible in <a href='https://frontend-apps-lovat.vercel.app/' target='_blank'>the end result</a>. There has been a lot of work in data fetching, cleaning it up and displaying the right ones. The website shows the value of currencies per continent compared to €1.",
+            "second": "To start off, I created a world map that is separated by continents. I then gave each continent a hover state. To finish it off, I created a tooltip using D3 that shows the average value of the currencies in that continent.",
+            "third": "I also wanted to show a barchart that displays the value of different currencies per continent. Which continent is shown, depends on the continent you clicked on. To keep the barchart compact, I filtered out the values that were to small to show in the barchart. Here, I also added a tooltip that shows the value of the hovered currency."
+        },
         "nextProject": "detail.html?lays"
     }
 }
