@@ -60,7 +60,7 @@
             "ul2_2": "Hype of the avocado"
         },
         "paragraph": {
-            "first": "Me and my teammates had to create a website that shows something regards climate change. Me and my teammates started of with a long brainstorm. Eventually we decided we wanted to target the climate impact of the avocado.",
+            "first": "Me and my teammates had to create a website that shows something regards climate change. Me and my teammates started off with a long brainstorm. Eventually we decided we wanted to target the climate impact of the avocado.",
             "second": "Since I had to take control over the coding, I didn't do any of the Visuals. After the visuals were made, I could start animating the website. I used Greensock for my animations which was new for me. After some practice, I got the hang of it and was able to animate <a href='https://dannyfrelink.github.io/project-id/' target='_blank'>the website</a> how we liked to."
         },
         "nextProject": "detail.html?avl"
@@ -70,16 +70,16 @@
         "h1": "App remake into website",
         "when": "June 2021",
         "images": {
-            "introImage": "images/projects/detailpage/avl/",
-            "ul1_1": "images/projects/detailpage/avl/",
-            "ul1_2": "images/projects/detailpage/avl/",
-            "ul1_3": "images/projects/detailpage/avl/",
-            "ul2_1": "images/projects/detailpage/avl/",
-            "ul2_2": "images/projects/detailpage/avl/",
-            "ul2_3": "images/projects/detailpage/avl/"
+            "introImage": "images/projects/detailpage/avl/desktop.png",
+            "ul2_1": "images/projects/detailpage/avl/mobile.png",
+            "ul2_2": "images/projects/detailpage/avl/focus.png",
+            "ul2_3": "images/projects/detailpage/avl/desktop.png"
         },
         "altImages": {},
-        "paragraph": {},
+        "paragraph": {
+            "first": "In April, I started my 10 weeks of internship at Van Ons. Here I got control over my own project. I had to create a desktop variant of an application that already exists: <a href='https://apps.apple.com/nl/app/avl-onco-app/id1442558622' target='_blank'>AVL Onco App</a>. An app that helps doctors give medication for tumors.",
+            "second": "This was the first time working with PHP, which took some getting used to. There was a lot of data fetching from WordPress and also some Back-end involved. I started off Mobile First to recreate the whole app as it was right now. Then I continued with creating a responsiveness. At last I added accessibility to finish the website off. Sadly, there is no live version, since it's only given to AVL."
+        },
         "nextProject": "detail.html?currencies"
     },
     "currencies": {
