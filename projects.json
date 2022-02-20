@@ -98,7 +98,13 @@
             "ul3_1": "images/projects/detailpage/currencies/barchart.png",
             "ul3_2": "images/projects/detailpage/currencies/hover-barchart.png"
         },
-        "altImages": {},
+        "altImages": {
+            "introImage": "Hover world map of project",
+            "ul2_1": "World map",
+            "ul2_2": "Hover world map",
+            "ul3_1": "Barchart",
+            "ul3_2": "Hover barchart"
+        },
         "paragraph": {
             "first": "Most of the work of this React project isn't really visible in <a href='https://frontend-apps-lovat.vercel.app/' target='_blank'>the end result</a>. There has been a lot of work in data fetching, cleaning it up and displaying the right ones. The website shows the value of currencies per continent compared to €1.",
             "second": "To start off, I created a world map that is separated by continents. I then gave each continent a hover state. To finish it off, I created a tooltip using D3 that shows the average value of the currencies in that continent.",
