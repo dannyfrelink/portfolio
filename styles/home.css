@@ -105,7 +105,10 @@ section:last-of-type article {
 
     main>* {
         opacity: 0;
-        transition: opacity 350ms ease-in;
+        transform: translateY(5vh);
+        transition: 
+            opacity 350ms ease-in,
+            transform 500ms ease-in;
     }
 
     main h2 {
