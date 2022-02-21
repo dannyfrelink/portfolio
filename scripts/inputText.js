@@ -1,3 +1,4 @@
+const titleHead = document.querySelector('title');
 const headerText = document.querySelector('#h1');
 const pWhen = document.querySelector('#pWhen');
 const p1 = document.querySelector('#p1');
@@ -9,6 +10,7 @@ const nextProject = document.querySelector('#nextProject');
 export default function inputTexts(filteredProjects) {
     const filteredParagraph = filteredProjects.paragraph;
 
+    filteredProjects.title ? titleHead.innerHTML = filteredProjects.title : titleHead.innerHTML = 'Case Study'
     filteredProjects.h1 ? headerText.innerHTML = filteredProjects.h1 : headerText.innerHTML = 'Case Study';
     filteredProjects.when ? pWhen.innerHTML = filteredProjects.when : pWhen.innerHTML = 'Unknown';
     filteredParagraph.first ? p1.innerHTML = filteredParagraph.first : p1.remove();
