@@ -1,5 +1,5 @@
 import getMatchingData from "./filterData.js";
-import inputImages from "./inputImage.js";
+import { inputImages } from "./inputImage.js";
 import inputTexts from "./inputText.js";
 
 const fetchData = () => {

@@ -29,3 +29,8 @@ header {
     justify-content: center;
     height: 100vh;
 }
+
+.appear {
+    opacity: 1 !important;
+    transform: translateY(0) !important; 
+}

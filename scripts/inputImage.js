@@ -16,7 +16,7 @@ const ulImage4_3 = document.querySelector('#ul4_3');
 const sectionThree = document.querySelector('section:nth-of-type(3)');
 const sectionFour = document.querySelector('section:nth-of-type(4)');
 
-export default function inputImages(filteredProjects) {
+function inputImages(filteredProjects) {
     const filteredImages = filteredProjects.images;
     const filteredAltImages = filteredProjects.altImages;
 
@@ -52,3 +52,5 @@ export default function inputImages(filteredProjects) {
 
     return filteredProjects;
 }
+
+export { inputImages, introImage };

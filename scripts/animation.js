@@ -1,7 +1,10 @@
-const faders = document.querySelectorAll('main>*');
+import { introImage } from './inputImage.js';
+
+const fadersHome = document.querySelectorAll('#mainHome *');
+const fadersDetail = document.querySelectorAll('#mainDetail section *');
 
 const appearOptions = {
-    threshold: 0.8,
+    threshold: 0.6,
 }
 
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
@@ -15,6 +18,21 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
     })
 }, appearOptions);
 
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-})
+if (window.innerWidth > 750) {
+    fadersHome.forEach(fader => {
+        appearOnScroll.observe(fader);
+    })
+
+    fadersDetail.forEach(fader => {
+        appearOnScroll.observe(fader);
+    })
+
+    if (introImage) {
+        appearOnScroll.observe(introImage);
+    }
+}
+
+window.addEventListener('resize', () => {
+    window.location.reload();
+});
+
