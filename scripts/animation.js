@@ -18,18 +18,16 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
     })
 }, appearOptions);
 
-if (window.innerWidth > 750) {
-    fadersHome.forEach(fader => {
-        appearOnScroll.observe(fader);
-    })
+fadersHome.forEach(fader => {
+    appearOnScroll.observe(fader);
+})
 
-    fadersDetail.forEach(fader => {
-        appearOnScroll.observe(fader);
-    })
+fadersDetail.forEach(fader => {
+    appearOnScroll.observe(fader);
+})
 
-    if (introImage) {
-        appearOnScroll.observe(introImage);
-    }
+if (introImage) {
+    appearOnScroll.observe(introImage);
 }
 
 window.addEventListener('resize', () => {
